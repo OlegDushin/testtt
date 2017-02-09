@@ -1,8 +1,13 @@
 <script>
 	$(".ms2_form .product-add-button product-item-block__btn button--adding _j-btn").click(function() {
+	$(this).parent(".purchase .target").css( "display", "none" );
+	
+	});
+</script>
+<script>
+	$(".ms2_form .product-add-button product-item-block__btn button--adding _j-btn").click(function() {
 	$(this).parent(".ms2_form").submit();
 	$(this).parent(".purchase .target").css( "display", "none" );
 	
 	});
-	
 </script>
